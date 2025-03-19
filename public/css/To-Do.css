@@ -7,7 +7,7 @@ h1 {
     text-align: center;
     color: #292966;
     font-size: 3em;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 .container {
@@ -24,20 +24,16 @@ h1 {
 .todo-list {
     margin-bottom: 15px;
     background-color: #A3A3CC;
-}
-
-.todo-list input[type="text"] {
-    flex-direction: column;
-    background-color: #A3A3CC;
-}
-
-
-.todo-list {
     padding: 10px;
     display: flex;
     flex-direction: column;
     height: 100%;
     list-style-type: none;
+}
+
+.todo-list input[type="text"] {
+    flex-direction: column;
+    background-color: #A3A3CC;
 }
 
 .todo-list li {
