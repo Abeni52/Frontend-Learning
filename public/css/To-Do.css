@@ -1,0 +1,44 @@
+.todo-list {
+    list-style-type: none;
+}
+
+a.active {
+    color: red;
+}
+
+a.hover {
+    color: black;
+}
+
+a.visited {
+    color: gray;
+}
+
+a.focus {
+    color: blue;
+}
+
+a.link {
+    color: green;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+}
+
+.container {
+    max-width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.todo-list {
+    inline-size: block;
+    background-color: lightgoldenrodyellow;
+}
