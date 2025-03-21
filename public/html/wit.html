@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Berhanu Taye!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+        height: 100vh;
+        overflow: auto;
+        position: relative;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-family: "Pacifico", cursive;
+        color: #fff;
+        font-size: 4em;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+        animation: bounce 2s infinite;
+      }
+
+      .slider {
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .slides {
+        display: flex;
+        width: 200%; /* Adjusted for two images */
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+        width: 50%; /* Each slide takes half the width for two images */
+      }
+
+      .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .dots {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .dot.active {
+        background-color: #ff6b6b;
+      }
+
+      .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        animation: fall 5s infinite;
+      }
+
+      .balloon {
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        background: radial-gradient(circle, #ffcc00, #ff9900);
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        animation: float 6s infinite ease-in-out;
+      }
+
+      .balloon::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 10px;
+        background: #fff;
+      }
+
+      .message {
+        font-family: "Pacifico", cursive;
+        color: #fff;
+        font-size: 1.5em;
+        margin: 20px 0;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      .play-song {
+        background: #ff6b6b;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 10px 0;
+        transition: background 0.3s;
+      }
+
+      .play-song:hover {
+        background: #e55a5a;
+      }
+
+      .telegram-messages {
+        width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .telegram-messages h2 {
+        font-family: "Pacifico", cursive;
+        color: #fff;
+        font-size: 2em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        margin-bottom: 15px;
+      }
+
+      .message-item {
+        background: rgba(255, 255, 255, 0.95);
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .message-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .message-item .sender {
+        font-weight: bold;
+        color: #ff6b6b;
+      }
+
+      .message-item .timestamp {
+        font-size: 0.9em;
+        color: #777;
+      }
+
+      .message-item .content {
+        margin-top: 5px;
+        color: #333;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        45% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-50%);
+        }
+        95% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes fall {
+        0% {
+          opacity: 1;
+          transform: translateY(-100vh) rotate(0deg);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(100vh) rotate(360deg);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(100vh);
+        }
+        100% {
+          transform: translateY(-100vh);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Birthday, Wita🫶🥰</h1>
+      <div class="slider">
+        <div class="slides" id="slides">
+          <div class="slide">
+            <!-- First image -->
+            <img
+              src="../Assets/Images/photo_2025-03-21_10-49-24.jpg"
+              alt="Boss Photo 1" />
+          </div>
+          <div class="slide">
+            <!-- Second image -->
+            <img
+              src="../Assets/Images/photo_2025-03-21_10-49-29.jpg"
+              alt="Boss Photo 2" />
+          </div>
+          <div class="slide">
+            <!-- Second image -->
+            <img
+              src="../Assets/Images/photo_2025-03-21_11-12-15.jpg"
+              alt="Boss Photo 2" />
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+      </div>
+      <button class="play-song" onclick="playSong()">
+        Play Birthday Song 🎵
+      </button>
+      <div class="message">
+        Wishing you a fantastic year ahead filled with success and joy!
+      </div>
+
+      <div class="telegram-messages">
+        <h2>Birthday Wishes from Telegram</h2>
+        <div class="message-item">
+          <span class="sender">Berhanu Taye</span>
+          <span class="timestamp">[21/03/2025 7:50 ጥዋት]</span>
+          <div class="content">
+            ልዩ ተሰጥኦው ፣ ተጫዋቹ ፣ ቁምነገረኛው ፣ ተወዳጁ ድምፃዊው (እኛ ኢትዮዺያ ነን) በሚለው ሙዚቃው ሚታወቀው
+            ምስክር ማንደፍሮ እኳን ተወለድክልን። ቀሪው የህይወት ዘመንህ የተባረከ ይሁንልህ ወንድማለም።
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Scoch Kacha</span>
+          <span class="timestamp">[21/03/2025 7:55 ጥዋት]</span>
+          <div class="content">
+            ውድ ወንድሜ፣ ዛሬ የልደትህ ቀን በመሆኑ እጅግ ደስ ብሎኛል! ሁል ጊዜ በጎ ጎንህን እንድመለከት ስላደረከኝ
+            አመሰግናለሁ። መልካም ልደት!
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Beki Loga</span>
+          <span class="timestamp">[21/03/2025 8:10 ጥዋት]</span>
+          <div class="content">Happy birthday wit</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Temu Editor</span>
+          <span class="timestamp">[21/03/2025 8:10 ጥዋት]</span>
+          <div class="content">Happy birthday wita🫶🥰</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Melu Loga</span>
+          <span class="timestamp">[21/03/2025 8:26 ጥዋት]</span>
+          <div class="content">መልካም እርጅና ዊታታ😊</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Merry🎧🌘🦋</span>
+          <span class="timestamp">[21/03/2025 8:28 ጥዋት]</span>
+          <div class="content">
+            መልካም ልደት አንተ ጥበብ 😁 አንደው ሙዚቃው ላይ ቲኒሽ ስሜታዊነት ይታይ ነበር በተረፈ አፍሪማው የግልህ
+            ነው🤓🤥🎂
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Abeኒ</span>
+          <span class="timestamp">[21/03/2025 8:28 ጥዋት]</span>
+          <div class="content">
+            እንኳን ተወለድክ ዊታ (ቆንጆ ስራ ነው ሙዚቃው🇪🇹) ዘመንህ የተባረከ ይሁን
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">💝Ado❤</span>
+          <span class="timestamp">[21/03/2025 8:28 ጥዋት]</span>
+          <div class="content">H.b.d wit</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">የማታ Loga Kkb</span>
+          <span class="timestamp">[21/03/2025 8:49 ጥዋት]</span>
+          <div class="content">መልካም ልደት ዊታ</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Samrawit Tsegay</span>
+          <span class="timestamp">[21/03/2025 8:53 ጥዋት]</span>
+          <div class="content">
+            On this special day, I wish you a birthday filled with love,
+            laughter, and joy, may your year ahead be as wonderful as you are!
+            cheers for the plus one witeye 🥂
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Tsiyon</span>
+          <span class="timestamp">[21/03/2025 9:02 ጥዋት]</span>
+          <div class="content">
+            ዊት አበባ ሰው የሁሉ ወዳጅ የሁሉ ወንድም የመስከረም ፀሐይ የአለቃ ምልክት የነፃነት ቦታ እንኳን ተወለድህ።
+            😍
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Melu Loga</span>
+          <span class="timestamp">[21/03/2025 9:04 ጥዋት]</span>
+          <div class="content">አሜን በል እድሜ ፀጋ ነው😎</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Helup</span>
+          <span class="timestamp">[21/03/2025 9:06 ጥዋት]</span>
+          <div class="content">Happiness birthday witaye🥰</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Tsiyon</span>
+          <span class="timestamp">[21/03/2025 9:11 ጥዋት]</span>
+          <div class="content">
+            የሙዚቃው ነገር አሳሳቢ ሁኔታ ላይ ደርሷል። ሰላም ነው ከተሰኘው እኔ ግጥም ከሰጠሁበት ሙዚቃ ቀጥሎ most
+            played song ነው እየተባለም ነው። እኔ ቀደም ብዬ በዘፈን ግጥም መልካም ምኞቴን መግለፄን ልብ ይሏል።
+          </div>
+        </div>
+        <div class="message-item">
+          <span class="sender">ብጺTsi</span>
+          <span class="timestamp">[21/03/2025 9:38 ጥዋት]</span>
+          <div class="content">Happy የመወለው ዴይ ዊት መልካም ሰው😍🫂</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Temu Editor</span>
+          <span class="timestamp">[21/03/2025 9:42 ጥዋት]</span>
+          <div class="content">ካላስጨፈረን ምን ጥቅም 😆</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">እሱየ</span>
+          <span class="timestamp">[21/03/2025 9:55 ጥዋት]</span>
+          <div class="content">መልካም የመደመጥ አመት ዊት</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Hanamariyam</span>
+          <span class="timestamp">[21/03/2025 9:59 ጥዋት]</span>
+          <div class="content">Melkam ldet shebelawu</div>
+        </div>
+        <div class="message-item">
+          <span class="sender">Abi Alemayehu</span>
+          <span class="timestamp">[21/03/2025 10:09 ጥዋት]</span>
+          <div class="content">Happy birthday boss🎂🎁</div>
+        </div>
+      </div>
+    </div>
+
+    <audio
+      id="birthdaySong"
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+    <script>
+      // Confetti effect
+      for (let i = 0; i < 50; i++) {
+        let confetti = document.createElement("div");
+        confetti.className = "confetti";
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.animationDelay = Math.random() * 5 + "s";
+        confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        document.body.appendChild(confetti);
+      }
+
+      // Balloon effect
+      for (let i = 0; i < 20; i++) {
+        let balloon = document.createElement("div");
+        balloon.className = "balloon";
+        balloon.style.left = Math.random() * 100 + "vw";
+        balloon.style.animationDelay = Math.random() * 5 + "s";
+        balloon.style.background = `radial-gradient(circle, hsl(${Math.random() * 360}, 100%, 50%), hsl(${Math.random() * 360}, 100%, 40%))`;
+        document.body.appendChild(balloon);
+      }
+
+      // Slider functionality
+      let slideIndex = 0;
+      const slides = document.getElementById("slides");
+      const dots = document.getElementsByClassName("dot");
+
+      function showSlides() {
+        slideIndex++;
+        if (slideIndex >= 2) slideIndex = 0;
+        slides.style.transform = `translateX(-${slideIndex * 50}%)`;
+        updateDots();
+        setTimeout(showSlides, 5000); // Change slide every 5 seconds
+      }
+
+      function currentSlide(index) {
+        slideIndex = index;
+        slides.style.transform = `translateX(-${slideIndex * 50}%)`;
+        updateDots();
+      }
+
+      function updateDots() {
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex].className += " active";
+      }
+
+      showSlides();
+
+      // Play birthday song
+      const birthdaySong = document.getElementById("birthdaySong");
+      function playSong() {
+        birthdaySong.play();
+      }
+    </script>
+  </body>
+</html>

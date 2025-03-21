@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    color: #333;
+}
+
+.birthday-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content";
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+.birthday-header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+}
+
+.birthday-header h1 {
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.birthday-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-section {
+    text-align: center;
+}
+
+.slider {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    width: 33.33%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #ff6b6b;
+}
+
+.play-song {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-song:hover {
+    background: #e55a5a;
+}
+
+.message-section {
+    text-align: center;
+}
+
+.main-message {
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.telegram-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.telegram-section h2 {
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.telegram-messages {
+    display: grid;
+    gap: 15px;
+}
+
+.message-item {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.message-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.message-item .sender {
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 5px;
+}
+
+.message-item .timestamp {
+    font-size: 0.8em;
+    color
