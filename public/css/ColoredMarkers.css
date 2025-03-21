@@ -55,3 +55,40 @@ h1 {
     background-color: white;
     padding: 10px 0;
 }
+
+body {
+    background-color: #f4f4f4;
+  }
+  
+  .color-grid {
+    /* add some styles to make the grid visible */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  
+  .color1 {
+    background-color: #ff0000; /* hexadecimal color value */
+  }
+  
+  .color2 {
+    background-color: rgb(0, 255, 0); /* RGB color value */
+  }
+  
+  .color3 {
+    background-color: blue; /* predefined (word) color value */
+  }
+  
+  .color4 {
+    background-color: hsl(120, 100%, 50%); /* HSL color value */
+  }
+  
+  .color5 {
+    background-color: #008000; /* any background color value */
+  }
